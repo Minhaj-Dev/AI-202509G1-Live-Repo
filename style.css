@@ -69,7 +69,7 @@ right: 25px;
 .card{
     width: 300px;
     height: max-content;
-    border: 1px solid black;
+    border: 1px solid rgb(169, 8, 255);
     border-radius: 16px;
     padding: 15px;
     display: flex;
