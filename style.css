@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color:white;
+    z-index: 99;
+}
+
+.backtoTop{
+width: 60px;
+height: 60px;
+background-color: red;
+position: fixed;
+bottom:25px;
+right: 25px;
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, .8);
+}
+.links a .icons{
+    width: 15px;
+   
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+   align-items: center;
+ justify-content: center;
+    
+}
+
+.heading{
+    padding: 20px;
+}
+
+.heading h1{
+    text-align: center;
+}
+
+.card{
+    width: 300px;
+    height: max-content;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.card img{
+    width: 100%
+}
+
+.btngroup{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btngroup button{
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50px;
+
+}
+
+.sale{
+  width: 45px;
+  height: 45px;
+    background-color: red;
+    position: absolute;
+   right: 40px;
+    top: 40px;
+    border-radius: 90%;
+    
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.parentOfCards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer{
+    margin-top: 10px;
+    width: 100%;
+    height: max-content;
+    background-color: gray;
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 40px;
+
+}
+
+.footer div{
+    width: 350px;
+    height: 100%;
+    padding: 25px;
+}
+
+.footer div ul{
+    list-style: none;
+    
+}
+
+.footer div ul li a{
+    text-decoration: none;
+}
+
+
+.footer div ul li{
+  padding: 7px 0px;
+}
+
+.footer div h3{
+    margin-bottom: 15px;
+}
+
+.menuBar{
+    display: none;
+}
+
+
+@media screen and (max-width:768px){
+    .links{
+        display: none;
+    }
+
+    .menuBar{
+        display: block;
+        transform: rotate(90deg);
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .footer{
+        /* overflow: hidden; */
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+     
+    }
+}
+
+
